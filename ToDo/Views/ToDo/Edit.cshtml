@@ -1,0 +1,45 @@
+@model ToDo
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+
+<form method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Id"></label>
+        <input asp-for="Id" class="form-control" />
+        <span asp-validation-for="Id" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Title"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Details"></label>
+        <input asp-for="Details" class="form-control" />
+        <span asp-validation-for="Details" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Date"></label>
+        <input asp-for="Date" type="date" class="form-control" />
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <div class="form-check">
+            <input asp-for="IsDone" class="form-check-input" />
+            <label class="form-check-label" asp-for="IsDone">@Html.DisplayNameFor(model => model.IsDone)</label>
+        </div>
+    </div>
+    
+    <div>
+        <button type="submit" class="btn btn-primary">Update</button> |
+        <a asp-action="Index" class="btn btn-info ">Back to List</a>
+    </div>
+</form>

@@ -1,0 +1,40 @@
+@model ToDo
+
+<h2>Create</h2>
+
+<div class="row alert alert-primary">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control"/>
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Details" class="control-label"></label>
+                <input asp-for="Details" class="form-control"/>
+                <span asp-validation-for="Details" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control"/>
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label asp-for="IsDone" class="control-label"></label>
+                <input asp-for="IsDone" class="form-check-input"/>
+                <span asp-validation-for="IsDone" class="text-danger"></span>
+            </div>
+            <input type="submit" value="Create" class="btn btn-success"/>
+        </form>
+    </div>
+</div>
+<a asp-action="Index" class="btn btn-primary mt-3">Index</a>
+
+@section Scripts
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+} 
