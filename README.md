@@ -3,38 +3,6 @@
 <html>
 <head>
     <title>ToDo List Web Application README</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-            background-color: #f8f8f8;
-        }
-        h1 {
-            color: #333;
-        }
-        ul {
-            list-style-type: square;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        code {
-            background-color: #f4f4f4;
-            padding: 2px 4px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        pre code {
-            display: block;
-            white-space: pre;
-            background-color: #f4f4f4;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            overflow-x: auto;
-        }
-    </style>
 </head>
 <body>
     <h1>ToDo List Web Application</h1>
