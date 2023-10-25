@@ -4,8 +4,8 @@
 <head>
 </head>
 <body>
-    <h1>ToDo List Web Application</h1>
-    <p>This is a simple README template for a ToDo List Web Application project.</p>
+    <h1>To-Do List Web Application</h1>
+    <p>This project is a simple CRUD application for a To-Do List using the MVC pattern in C# .Net core.</p>
     <h2>Table of Contents</h2>
     <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
