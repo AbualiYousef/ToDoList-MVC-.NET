@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ToDo List Web Application README</title>
 </head>
 <body>
     <h1>ToDo List Web Application</h1>
